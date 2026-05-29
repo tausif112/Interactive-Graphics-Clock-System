@@ -25,8 +25,9 @@ The clock supports multiple visual themes and provides an interactive user exper
 
 # 🎥 Demo
 
-![Clock Demo](images/clock_demo.gif)
+🎬 **Demo Video**
 
+[Watch Demo Video](https://github.com/tausif112/Interactive-Graphics-Clock-System/blob/main/images/clock_demo.mp4)
 ---
 
 # ✨ Features
