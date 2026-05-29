@@ -23,6 +23,12 @@ The clock supports multiple visual themes and provides an interactive user exper
 
 ---
 
+# 🎥 Demo
+
+![Clock Demo](images/clock_demo.gif)
+
+---
+
 # ✨ Features
 
 ✅ Real-time analog clock synchronization  
