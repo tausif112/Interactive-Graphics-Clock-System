@@ -1,65 +1,124 @@
 # 🕒 Interactive Graphics Clock System
 
-A real-time analog clock simulation developed using **C++**, **OpenGL**, and **GLUT**, demonstrating the implementation of fundamental Computer Graphics algorithms and interactive graphical rendering techniques.
+<div align="center">
 
-![Clock Theme 1](images/Screenshot_1.png)
+![OpenGL](https://img.shields.io/badge/OpenGL-Graphics-blue)
+![Language](https://img.shields.io/badge/Language-C++-orange)
+![GLUT](https://img.shields.io/badge/Library-GLUT-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
----
+A real-time analog clock simulation developed using OpenGL and GLUT, demonstrating classic Computer Graphics algorithms and interactive graphical rendering techniques.
 
-## 📌 Overview
-
-The Interactive Graphics Clock System is a Computer Graphics project that visualizes a fully functional analog clock with real-time updates. The project emphasizes the practical implementation of classic graphics algorithms rather than relying on built-in drawing primitives.
-
-The system renders clock components dynamically and supports multiple visual themes through keyboard interaction.
-
----
-
-## ✨ Key Features
-
-- Real-time analog clock synchronization
-- Interactive theme switching
-- Custom clock face rendering
-- Dynamic hour, minute, and second hands
-- Multiple concentric graphical layers
-- Keyboard-based user interaction
-- Algorithm-based primitive drawing
+</div>
 
 ---
 
-## 🖥️ Preview
+# 📌 Project Overview
 
-### Theme 1
+The **Interactive Graphics Clock System** is a Computer Graphics project developed using **C++**, **OpenGL**, and **GLUT**.
 
-![Theme 1](images/Screenshot_1.png)
+This application simulates a fully functional analog clock that synchronizes with the system time and updates in real time. The project focuses on implementing fundamental Computer Graphics algorithms, including line drawing and circle drawing techniques, rather than relying solely on built-in graphics primitives.
 
-### Theme 2
-
-![Theme 2](images/Screenshot_3.png)
+The clock supports multiple visual themes and provides an interactive user experience through keyboard controls.
 
 ---
 
-## 🔧 Graphics Algorithms Implemented
+# ✨ Features
 
-### Bresenham Line Drawing Algorithm
+✅ Real-time analog clock synchronization  
+✅ Multiple visual themes  
+✅ Interactive keyboard controls  
+✅ Dynamic hour, minute, and second hands  
+✅ Concentric clock face design  
+✅ Algorithm-based graphics rendering  
+✅ Lightweight and efficient implementation  
+
+---
+
+# 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| C++ | Programming Language |
+| OpenGL | Graphics Rendering |
+| GLUT / FreeGLUT | Window Management & Event Handling |
+| Code::Blocks | Development Environment |
+
+---
+
+# 📂 Project Structure
+
+```bash
+Interactive-Graphics-Clock-System/
+│
+├── main.cpp
+├── Interactive Graphics Clock System.cbp
+├── LICENSE
+├── README.md
+│
+└── images/
+    ├── Screenshot_1.png
+    └── Screenshot_3.png
+```
+
+---
+
+# ⚙️ How the Program Works
+
+The application retrieves the current system time and dynamically updates the positions of the clock hands.
+
+The project utilizes:
+
+- Bresenham Line Drawing Algorithm
+- Midpoint Circle Algorithm
+- Scan Conversion Circle Filling
+- Trigonometric calculations for hand positioning
+- GLUT Timer Functions for real-time updates
+
+The positions of the clock hands are calculated using trigonometric functions:
+
+```cpp
+x = centerX + radius * cos(angle);
+y = centerY + radius * sin(angle);
+```
+
+The display refreshes every second to ensure accurate synchronization with system time.
+
+---
+
+# 🧠 Core Graphics Algorithms
+
+## 🔹 Bresenham Line Drawing Algorithm
+
 Used for:
-- Clock hands
-- Minute markings
+
+- Hour hand rendering
+- Minute hand rendering
+- Second hand rendering
 - Hour markings
-- Thick line rendering
+- Minute markings
 
-### Midpoint Circle Algorithm
+---
+
+## 🔹 Midpoint Circle Algorithm
+
 Used for:
-- Clock boundaries
+
+- Clock boundary creation
 - Decorative concentric circles
 
-### Scan Conversion Circle Filling
+---
+
+## 🔹 Scan Conversion Circle Filling
+
 Used for:
+
 - Multi-layer clock face rendering
 - Center pivot rendering
 
 ---
 
-## 🎮 User Controls
+# 🎮 User Controls
 
 | Key | Action |
 |------|---------|
@@ -69,89 +128,67 @@ Used for:
 
 ---
 
-## 🏗️ Project Architecture
+# 📸 Output Screenshots
 
-```text
-Interactive Graphics Clock System
-│
-├── main.cpp
-├── Interactive Graphics Clock System.cbp
-│
-└── images
-    ├── Screenshot_1.png
-    └── Screenshot_3.png
-```
+## 🔹 Theme 1
+
+![Theme 1](images/Screenshot_1.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 🔹 Theme 2
 
-| Technology | Purpose |
-|------------|---------|
-| C++ | Core Programming Language |
-| OpenGL | Graphics Rendering |
-| GLUT / FreeGLUT | Window Management & Event Handling |
-| Code::Blocks | Development Environment |
+![Theme 2](images/Screenshot_3.png)
 
 ---
 
-## ⚙️ How to Build and Run
+# 🚀 Compilation & Execution
 
-### Windows
-
-1. Install Code::Blocks with MinGW
-2. Configure GLUT / FreeGLUT libraries
-3. Open:
-
-```text
-Interactive Graphics Clock System.cbp
-```
-
-4. Build and Run the project
-
-### Linux
+## Compile
 
 ```bash
-g++ main.cpp -o clock -lGL -lGLU -lglut
+g++ main.cpp -o clock -lglut -lGLU -lGL
+```
+
+## Run
+
+```bash
 ./clock
 ```
 
 ---
 
-## 📚 Learning Outcomes
+# 📖 Learning Outcomes
 
-This project demonstrates practical understanding of:
+Through this project, the following concepts were practiced:
 
 - Computer Graphics Fundamentals
 - Raster Graphics Algorithms
-- Real-Time Rendering
-- Geometric Transformations
-- Event-Driven Programming
 - OpenGL Graphics Programming
+- Real-Time Rendering
+- Event-Driven Programming
+- Interactive User Interface Design
+- Mathematical Visualization Techniques
 
 ---
 
-## 🚀 Future Improvements
+# 👨‍💻 Author
 
-- Digital clock display
-- Alarm functionality
-- Additional themes
-- Smooth hand animation
-- Sound effects
-- Customizable clock styles
+### Md. Tausif Uddin
 
----
-
-## 👨‍💻 Author
-
-**Md. Tausif Uddin**  
-B.Sc. in Computer Science & Engineering  
+Bachelor of Science in Computer Science & Engineering (CSE)  
 University of Asia Pacific (UAP)
 
 GitHub: https://github.com/tausif112
 
 ---
 
-## 📄 License
+# 📜 License
 
 This project is licensed under the MIT License.
+
+---
+
+# ⭐ Acknowledgement
+
+This project was developed as part of the Computer Graphics Laboratory coursework and demonstrates the practical implementation of classical graphics algorithms using OpenGL and GLUT.
